@@ -1,0 +1,42 @@
+/* Overide Select2 Class */
+.select2-container {
+    width: 410px;
+}
+.select2-container .select2-selection--single {
+    height: 41px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 38px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__clear {
+    height: 38px !important;
+}
+.select2-container .select2-selection--multiple {
+    height: 41px !important;
+    min-height: 41px !important;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    margin-top: 8px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 35px !important;
+}
+
+/* Overide Bootstrap File Input */
+.input-group-append .btn, .input-group-prepend .btn {
+    border: 1px solid #ced4da;
+    padding: 0.65rem 1rem;
+}
+.input-group.file-caption-main {
+    display: none !important;
+}
+.kv-file-upload{
+    display: none !important;
+}
+
+// Custom Button Back
+.back-btn {
+    left: 20px;
+    position: absolute;
+    top: 35px;
+}

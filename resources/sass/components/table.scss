@@ -1,0 +1,64 @@
+.table thead th {
+  color: $gray-700;
+}
+
+.table-striped tr {
+  td:first-of-type { border-radius: 5px 0 0 5px; }
+  td:last-of-type { border-radius: 0 5px 5px 0; }
+}
+
+th.min-width-10 {
+  min-width: 10px;
+}
+th.min-width-20 {
+  min-width: 20px;
+}
+th.min-width-30 {
+  min-width: 30px;
+}
+th.min-width-40 {
+  min-width: 40px;
+}
+th.min-width-50 {
+  min-width: 50px;
+}
+th.min-width-60 {
+  min-width: 60px;
+}
+th.min-width-70 {
+  min-width: 70px;
+}
+th.min-width-90 {
+  min-width: 90px;
+}
+
+th.w-10 {
+  width: 10px;
+}
+th.w-20 {
+  width: 20px;
+}
+th.w-30 {
+  width: 30px;
+}
+th.w-40 {
+  width: 40px;
+}
+th.w-50 {
+  width: 50px;
+}
+th.w-60 {
+  width: 60px;
+}
+th.w-70 {
+  width: 70px;
+}
+th.w-80 {
+  width: 80px;
+}
+th.w-90 {
+  width: 90px;
+}
+th.w-100 {
+  width: 100px;
+}
