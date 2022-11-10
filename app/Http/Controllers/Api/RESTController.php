@@ -51,13 +51,26 @@ class RESTController extends ApiController
      */
     public function listData()
     {
-        $queries = TCandidate::with(['country:id,name', 'qualification:id,name'])->get();
+        if(auth()->user()->hasRole('Admin_HRD') || auth()->user()->hasRole('Manager'))
+        {
+            $queries = TCandidate::with(['country:id,name', 'qualification:id,name'])
+                        ->latest()
+                        ->get();
+        }
+        else
+        {
+            $queries = TCandidate::where('user_id', auth()->user()->id)
+                ->with(['country:id,name', 'qualification:id,name'])
+                ->latest()
+                ->get();   
+        }
 
         $json = [];
         foreach($queries as $key => $query)
         {
             $json[] = [
                 'id'                            => $query->id,
+                'user_id'                       => $query->user_id,
                 'applicant_name'                => $query->applicant_name,
                 'birthday'                      => $query->birthday,
                 'email'                         => $query->email,
@@ -95,6 +108,7 @@ class RESTController extends ApiController
         // Required Input
         $candidate->education_qualification_id      = $inputs['education_qualification_id'];
         $candidate->education_country_id            = $inputs['education_country_id'];
+        $candidate->user_id                         = auth()->user()->id;
         $candidate->education_name                  = $inputs['education_name'];
         $candidate->applicant_name                  = $inputs['applicant_name'];
         $candidate->experience                      = $inputs['experience'];
@@ -137,6 +151,7 @@ class RESTController extends ApiController
         // Required Input
         $candidate->education_qualification_id      = $inputs['education_qualification_id'];
         $candidate->education_country_id            = $inputs['education_country_id'];
+        $candidate->user_id                         = auth()->user()->id;
         $candidate->education_name                  = $inputs['education_name'];
         $candidate->applicant_name                  = $inputs['applicant_name'];
         $candidate->experience                      = $inputs['experience'];

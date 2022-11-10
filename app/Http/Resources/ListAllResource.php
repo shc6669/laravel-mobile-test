@@ -15,7 +15,8 @@ class ListAllResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'candidateId'           => $this['id'],
+            'post_id'               => $this['id'],
+            'user_id'               => $this['user_id'],
             'candidateName'         => $this['applicant_name'],
             'candidateBirthday'     => $this['birthday'],
             'candidateEmail'        => $this['email'],

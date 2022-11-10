@@ -14,6 +14,7 @@ class TCandidate extends Model
     protected $fillable = [
         'education_qualification_id', 
         'education_country_id', 
+        'user_id',
         'education_name',
         'applicant_name', 
         'birthday', 
@@ -40,5 +41,10 @@ class TCandidate extends Model
     public function skills()
     {
         return $this->belongsToMany(MSkills::class, 'candidate_skills', 'candidate_id', 'skill_id');
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id');
     }
 }

@@ -21,6 +21,11 @@ Superadmin Role
 - username: admin
 - password: admin123
 
+Manager Role
+- Use this credentials for user role:
+- username: chandra
+- password: chandra123
+
  Admin Role
 - Use this credentials for user role:
 - username: keanu

@@ -70,15 +70,15 @@ Route::group(['middleware' => ['auth', 'verified']], function () {
     // List Qualification
     Route::get('/list-qualification', 'RESTController@listQualifications');
 
-    // List All Data Candidate
-    Route::get('/list-all-candidate', 'RESTController@listData');
+    // List All Data
+    Route::get('/list-all-data', 'RESTController@listData');
 
     // Create Data
-    Route::post('/data-candidate', 'RESTController@storeData');
+    Route::post('/data-post', 'RESTController@storeData');
 
     // Update Data
-    Route::put('/data-candidate/{id}', 'RESTController@updateData');
+    Route::put('/data-post/{id}', 'RESTController@updateData');
 
     // Delete Data
-    Route::delete('data-candidate/{id}', 'RESTController@destroyData');
+    Route::delete('/data-post/{id}', 'RESTController@destroyData');
 });
