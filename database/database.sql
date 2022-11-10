@@ -1,4 +1,4 @@
--- Adminer 4.8.1 MySQL 5.5.5-10.4.22-MariaDB dump
+-- Adminer 4.8.1 MySQL 10.4.25-MariaDB dump
 
 SET NAMES utf8;
 SET time_zone = '+00:00';
@@ -33,13 +33,18 @@ CREATE TABLE `candidate_skills` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `candidate_skills` (`candidate_id`, `skill_id`) VALUES
-(13,	3),
-(13,	5),
-(13,	6),
-(13,	7),
-(20,	2),
-(20,	4),
-(20,	6);
+(22,	1),
+(22,	2),
+(22,	3),
+(22,	9),
+(23,	1),
+(23,	2),
+(23,	3),
+(23,	9),
+(24,	1),
+(24,	2),
+(24,	3),
+(24,	9);
 
 DROP TABLE IF EXISTS `countries`;
 CREATE TABLE `countries` (
@@ -440,11 +445,18 @@ INSERT INTO `permission_role` (`permission_id`, `role_id`) VALUES
 (7,	1),
 (8,	1),
 (9,	1),
+(10,	2),
 (10,	3),
+(10,	4),
 (12,	2),
 (12,	3),
+(12,	4),
+(14,	2),
 (14,	3),
-(15,	3);
+(14,	4),
+(15,	2),
+(15,	3),
+(15,	4);
 
 DROP TABLE IF EXISTS `personal_access_tokens`;
 CREATE TABLE `personal_access_tokens` (
@@ -463,7 +475,18 @@ CREATE TABLE `personal_access_tokens` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `personal_access_tokens` (`id`, `tokenable_type`, `tokenable_id`, `name`, `token`, `abilities`, `last_used_at`, `created_at`, `updated_at`) VALUES
-(1,	'Vanguard\\User',	5,	'Dell Latitude',	'8bdc32df640984f20f3627d993cae323b106beda505fcaa50dd8aa835ea70fd5',	'[\"*\"]',	'2022-03-19 23:49:57',	'2022-03-19 22:39:46',	'2022-03-19 23:49:57');
+(1,	'Vanguard\\User',	5,	'Dell Latitude',	'8bdc32df640984f20f3627d993cae323b106beda505fcaa50dd8aa835ea70fd5',	'[\"*\"]',	'2022-03-19 23:49:57',	'2022-03-19 22:39:46',	'2022-03-19 23:49:57'),
+(2,	'Vanguard\\User',	1,	'Iphone 11 Pro',	'073d57a63dccaff7e2e8b2aa8f21f6a79be2ae10a37aac85ffcd3db4828803bc',	'[\"*\"]',	NULL,	'2022-11-09 18:46:05',	'2022-11-09 18:46:05'),
+(3,	'Vanguard\\User',	1,	'Iphone 11 Pro',	'f03fdb1c1135c66bfe8c42778cbdd087d4fd5e220a27d6b6b637bb51341e2afc',	'[\"*\"]',	NULL,	'2022-11-09 18:48:26',	'2022-11-09 18:48:26'),
+(5,	'Vanguard\\User',	1,	'Iphone 11 Pro',	'ffc016cc8c455bac742f0bf2a2ba49260c0326da58f2334091131005f117daab',	'[\"*\"]',	NULL,	'2022-11-09 20:52:06',	'2022-11-09 20:52:06'),
+(6,	'Vanguard\\User',	6,	'Iphone 11 Pro',	'bba03b7b02b936b983d8f2ec910adae0a76c37373fd95a6002f9781cfdc34103',	'[\"*\"]',	'2022-11-09 21:30:48',	'2022-11-09 20:57:57',	'2022-11-09 21:30:48'),
+(7,	'Vanguard\\User',	2,	'Iphone 11 Pro Max',	'3dc657acc3cc6afbf9a26895239be274a79e7570d9b1081969c014848c907c91',	'[\"*\"]',	'2022-11-09 21:35:00',	'2022-11-09 21:34:43',	'2022-11-09 21:35:00'),
+(8,	'Vanguard\\User',	5,	'Iphone 11 Pro Max',	'd6c2043a3fc455afab69ed4570994cb5143cfe59768a7bccbae52e29d0dcd769',	'[\"*\"]',	'2022-11-09 23:16:36',	'2022-11-09 21:38:59',	'2022-11-09 23:16:36'),
+(9,	'Vanguard\\User',	5,	'Iphone 11 Pro Max',	'e24feecdceec62f11e3e0379a7a5ebe9b25edd6ca48dc8fe58df3153cc829135',	'[\"*\"]',	'2022-11-09 21:42:10',	'2022-11-09 21:41:59',	'2022-11-09 21:42:10'),
+(10,	'Vanguard\\User',	6,	'Iphone 11 Pro Max',	'9a4c31dd183587a6095edb2adb55e1fe1b5272cc163da4642ddcb3233a49c0b2',	'[\"*\"]',	'2022-11-09 21:44:45',	'2022-11-09 21:43:30',	'2022-11-09 21:44:45'),
+(11,	'Vanguard\\User',	2,	'Iphone 11 Pro Max',	'af2216cbf2891dacf2d9d53ea9324b764716791ca7b00c705ebaf10443aa5150',	'[\"*\"]',	'2022-11-09 21:45:48',	'2022-11-09 21:45:33',	'2022-11-09 21:45:48'),
+(12,	'Vanguard\\User',	6,	'Iphone 11 Pro Max',	'9bc814dd8ebca18186e68629c708a26fdeb8d7970d1be22fd23f8c9d5252f13d',	'[\"*\"]',	'2022-11-09 21:54:06',	'2022-11-09 21:46:41',	'2022-11-09 21:54:06'),
+(13,	'Vanguard\\User',	6,	'Iphone 11 Pro Max',	'4f1e3cab7bd5b1b40a794b3b52713cf91cad55115773ac80cac40138870b1b53',	'[\"*\"]',	'2022-11-09 23:16:42',	'2022-11-09 21:54:11',	'2022-11-09 23:16:42');
 
 DROP TABLE IF EXISTS `roles`;
 CREATE TABLE `roles` (
@@ -481,7 +504,8 @@ CREATE TABLE `roles` (
 INSERT INTO `roles` (`id`, `name`, `display_name`, `description`, `removable`, `created_at`, `updated_at`) VALUES
 (1,	'Admin',	'Admin',	'System administrator.',	0,	'2021-11-10 03:16:33',	'2021-11-10 03:16:33'),
 (2,	'HRD',	'Human Resource Department',	'Default system user HRD',	0,	'2021-11-10 03:16:33',	'2022-03-17 23:30:16'),
-(3,	'Admin_HRD',	'Senior Human Resource Department',	'Senior Human Resource Department',	1,	'2021-11-10 17:18:47',	'2022-03-17 23:32:19');
+(3,	'Admin_HRD',	'Senior Human Resource Department',	'Senior Human Resource Department',	1,	'2021-11-10 17:18:47',	'2022-03-17 23:32:19'),
+(4,	'Manager',	'Manager Human Resource Department',	'Manager Human Resource Department',	1,	'2022-11-09 20:36:29',	'2022-11-09 20:36:29');
 
 DROP TABLE IF EXISTS `sessions`;
 CREATE TABLE `sessions` (
@@ -495,7 +519,8 @@ CREATE TABLE `sessions` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `sessions` (`id`, `user_id`, `ip_address`, `user_agent`, `payload`, `last_activity`) VALUES
-('cQIPeqotln9Ev4D979MXcTwITxaXGGCwPVi2YuJK',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiTGNQUnkxTjQySktMclh5UlpjWVJGRXBLMDVvR0NxcU9jR2l3U09uRCI7czo2OiJfZmxhc2giO2E6Mjp7czozOiJvbGQiO2E6MDp7fXM6MzoibmV3IjthOjA6e319czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6NTY6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMC9hZG1pbi9jYW5kaWRhdGUtbWFuYWdlbWVudC8xOS9lZGl0Ijt9czo1MDoibG9naW5fd2ViXzNkYzdhOTEzZWY1ZmQ0Yjg5MGVjYWJlMzQ4NzA4NTU3M2UxNmNmODIiO2k6NTt9',	1647760592);
+('gXzrqACE42vPwrAwifqknjQ00Qju17Xba8n3WlAT',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',	'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiajY3dWl0Q1BwUDViVVI3dnBiNGdyUEhiR0pxdHJPOXF5dUczUjdjZiI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MzM6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMS9hZG1pbi9yb2xlcyI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl8zZGM3YTkxM2VmNWZkNGI4OTBlY2FiZTM0ODcwODU1NzNlMTZjZjgyIjtpOjE7fQ==',	1668057262),
+('v5xTbAZvQoaahI9wBpu6xXY96Ut7XoSbT6D6E8qJ',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',	'YTo0OntzOjY6Il90b2tlbiI7czo0MDoiSmRQNXNYZ3JXUm9pZWFtcUEyN1BmVnVTZUJmeG1sUENOeDJWbDZMMCI7czo5OiJfcHJldmlvdXMiO2E6MTp7czozOiJ1cmwiO3M6MjE6Imh0dHA6Ly9sb2NhbGhvc3Q6ODAwMSI7fXM6NjoiX2ZsYXNoIjthOjI6e3M6Mzoib2xkIjthOjA6e31zOjM6Im5ldyI7YTowOnt9fXM6NTA6ImxvZ2luX3dlYl8zZGM3YTkxM2VmNWZkNGI4OTBlY2FiZTM0ODcwODU1NzNlMTZjZjgyIjtpOjE7fQ==',	1668051128);
 
 DROP TABLE IF EXISTS `settings`;
 CREATE TABLE `settings` (
@@ -526,6 +551,7 @@ CREATE TABLE `t_candidate` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `education_qualification_id` int(10) unsigned NOT NULL,
   `education_country_id` int(10) unsigned NOT NULL,
+  `user_id` int(10) unsigned NOT NULL,
   `education_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `applicant_name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `birthday` date DEFAULT NULL,
@@ -540,13 +566,12 @@ CREATE TABLE `t_candidate` (
   PRIMARY KEY (`id`),
   KEY `education_qualification_id` (`education_qualification_id`),
   KEY `education_country_id` (`education_country_id`),
+  KEY `user_id` (`user_id`),
   CONSTRAINT `t_candidate_ibfk_2` FOREIGN KEY (`education_country_id`) REFERENCES `countries` (`id`) ON DELETE CASCADE,
-  CONSTRAINT `t_candidate_ibfk_3` FOREIGN KEY (`education_qualification_id`) REFERENCES `m_education_qualification` (`id`) ON DELETE CASCADE
+  CONSTRAINT `t_candidate_ibfk_3` FOREIGN KEY (`education_qualification_id`) REFERENCES `m_education_qualification` (`id`) ON DELETE CASCADE,
+  CONSTRAINT `t_candidate_ibfk_4` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `t_candidate` (`id`, `education_qualification_id`, `education_country_id`, `education_name`, `applicant_name`, `birthday`, `experience`, `last_position`, `applied_position`, `email`, `phone`, `resume`, `created_at`, `updated_at`) VALUES
-(13,	4,	360,	'Bina Nusantara University',	'Chandrayana Putra',	'1986-11-17',	'5',	'Programmer at Kopernik',	'Frontend Developer',	'shc6669@gmail.com',	'081325999717',	'sample-pdf_1647750987.pdf',	'2022-03-19 18:23:20',	'2022-03-19 20:36:27'),
-(20,	4,	360,	'Test From API University',	'Test From API',	NULL,	'3',	'Software Engineer',	'Senior PHP Developer',	NULL,	NULL,	NULL,	'2022-03-19 23:49:48',	'2022-03-19 23:49:48');
 
 DROP TABLE IF EXISTS `users`;
 CREATE TABLE `users` (
@@ -584,9 +609,10 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 INSERT INTO `users` (`id`, `email`, `username`, `password`, `first_name`, `last_name`, `phone`, `avatar`, `address`, `country_id`, `role_id`, `birthday`, `last_login`, `status`, `two_factor_country_code`, `two_factor_phone`, `two_factor_options`, `email_verified_at`, `remember_token`, `created_at`, `updated_at`, `announcements_last_read_at`) VALUES
-(1,	'admin@admin.com',	'admin',	'$2y$10$p.QouJCV/XKSuLAzqfiJ1eeSecvOe2CvI4ZrUgrcUbqUdaEVQuEGq',	'Admin',	'System',	NULL,	NULL,	NULL,	360,	1,	'1986-11-17',	'2022-03-19 05:20:20',	'Active',	NULL,	NULL,	NULL,	'2021-11-10 03:16:33',	NULL,	'2021-11-10 03:16:33',	'2022-03-19 05:20:20',	NULL),
-(2,	'wick.john@admin.com',	'john.wick',	'$2y$10$/K8YQpGtK6Dbw2jHKYScg.scCggYecQMvUrZJd6ApbGDGHBzxKXIW',	'John',	'Wick',	NULL,	'https://www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=150',	NULL,	840,	2,	'1986-11-17',	'2022-03-19 20:36:54',	'Active',	NULL,	NULL,	NULL,	'2021-11-10 14:53:19',	NULL,	'2021-11-10 14:53:19',	'2022-03-19 20:36:54',	'2021-11-10 16:08:14'),
-(5,	'keanu.reaves@admin.com',	'keanu',	'$2y$10$ncGWAIDvs7XWRR.DAeCWn.H1VsHKDwstS8cOvPtATKge1a6fImoCq',	'Keanu',	'Reaves',	NULL,	'https://www.gravatar.com/avatar/f94538607203dda2a35264e850c412b8?size=150',	NULL,	NULL,	3,	NULL,	'2022-03-19 23:11:02',	'Active',	NULL,	NULL,	NULL,	'2021-11-10 17:33:32',	NULL,	'2021-11-10 17:33:32',	'2022-03-19 23:11:02',	NULL);
+(1,	'admin@admin.com',	'admin',	'$2y$10$p.QouJCV/XKSuLAzqfiJ1eeSecvOe2CvI4ZrUgrcUbqUdaEVQuEGq',	'Admin',	'System',	NULL,	NULL,	NULL,	360,	1,	'1986-11-17',	'2022-11-09 20:52:05',	'Active',	NULL,	NULL,	NULL,	'2021-11-10 03:16:33',	NULL,	'2021-11-10 03:16:33',	'2022-11-09 20:52:05',	NULL),
+(2,	'wick.john@admin.com',	'john.wick',	'$2y$10$/K8YQpGtK6Dbw2jHKYScg.scCggYecQMvUrZJd6ApbGDGHBzxKXIW',	'John',	'Wick',	NULL,	'https://www.gravatar.com/avatar/64e1b8d34f425d19e1ee2ea7236d3028?size=150',	NULL,	840,	2,	'1986-11-17',	'2022-11-09 21:45:33',	'Active',	NULL,	NULL,	NULL,	'2021-11-10 14:53:19',	NULL,	'2021-11-10 14:53:19',	'2022-11-09 21:45:33',	'2021-11-10 16:08:14'),
+(5,	'keanu.reaves@admin.com',	'keanu',	'$2y$10$ncGWAIDvs7XWRR.DAeCWn.H1VsHKDwstS8cOvPtATKge1a6fImoCq',	'Keanu',	'Reaves',	NULL,	'https://www.gravatar.com/avatar/f94538607203dda2a35264e850c412b8?size=150',	NULL,	NULL,	3,	NULL,	'2022-11-09 21:41:58',	'Active',	NULL,	NULL,	NULL,	'2021-11-10 17:33:32',	NULL,	'2021-11-10 17:33:32',	'2022-11-09 21:41:58',	NULL),
+(6,	'shc6669@gmail.com',	'chandra',	'$2y$10$TcjfyEL8mi6SflJC3mt/POp49IsNKdGss66pl7bvWLboroM1Z/HLu',	'Chandrayana',	'Putra',	NULL,	NULL,	NULL,	360,	4,	NULL,	'2022-11-09 21:54:11',	'Active',	NULL,	NULL,	NULL,	'2022-11-09 20:56:30',	NULL,	'2022-11-09 20:56:30',	'2022-11-09 21:54:11',	NULL);
 
 DROP TABLE IF EXISTS `user_activity`;
 CREATE TABLE `user_activity` (
@@ -601,207 +627,5 @@ CREATE TABLE `user_activity` (
   CONSTRAINT `user_activity_user_id_foreign` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `user_activity` (`id`, `description`, `user_id`, `ip_address`, `user_agent`, `created_at`) VALUES
-(1,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 03:17:12'),
-(2,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 03:17:19'),
-(3,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 03:24:04'),
-(4,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 03:24:08'),
-(5,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 14:51:50'),
-(6,	'Created new permission called Manage Master Data.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 14:54:21'),
-(7,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 14:54:27'),
-(8,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 15:50:00'),
-(9,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 15:50:08'),
-(10,	'Updated profile avatar.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 15:51:35'),
-(11,	'Updated profile details for Admin Backend.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 15:52:01'),
-(12,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 15:52:10'),
-(13,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 15:52:16'),
-(14,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:08:15'),
-(15,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:08:21'),
-(16,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:09:23'),
-(17,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:09:29'),
-(18,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:31:50'),
-(19,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:32:03'),
-(20,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:32:10'),
-(21,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 16:32:40'),
-(22,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:14:21'),
-(23,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:15:03'),
-(24,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:18:02'),
-(25,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:18:07'),
-(26,	'Created new role called Mechanics.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:18:47'),
-(27,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:19:04'),
-(28,	'Created new permission called Manage Cars.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:19:58'),
-(29,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:21:33'),
-(30,	'Created new permission called Manage Jobs.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:22:07'),
-(31,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:23:48'),
-(32,	'Updated profile details for Admin Backend.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:25:27'),
-(33,	'Updated profile details for Chandrayana Putra.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:25:51'),
-(34,	'Updated profile details for Arysanendra Reyswara.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:28:49'),
-(35,	'Updated profile details for Vanguard.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:29:29'),
-(36,	'Updated profile details for Vanguard.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:29:59'),
-(37,	'Updated profile details for John Wick.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:32:18'),
-(38,	'Updated profile details for John Wick.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:32:45'),
-(39,	'Updated profile details for Keanu Reaves.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 17:34:29'),
-(40,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 18:44:07'),
-(41,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 18:44:21'),
-(42,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 18:48:39'),
-(43,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 18:48:46'),
-(44,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 18:48:47'),
-(45,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-10 18:48:55'),
-(46,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 01:31:19'),
-(47,	'Updated the permission named Manage Cars.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 01:35:48'),
-(48,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 13:51:21'),
-(49,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 14:58:44'),
-(50,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 14:58:53'),
-(51,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 14:59:34'),
-(52,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 14:59:42'),
-(53,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:00:19'),
-(54,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:00:30'),
-(55,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:00:35'),
-(56,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:00:41'),
-(57,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:00:58'),
-(58,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:01:04'),
-(59,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:01:16'),
-(60,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:01:23'),
-(61,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:02:01'),
-(62,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:02:07'),
-(63,	'Deleted permission named Manage Jobs.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:02:27'),
-(64,	'Updated the permission named Create Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:03:14'),
-(65,	'Created new permission called List Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:03:53'),
-(66,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:04:02'),
-(67,	'Created new permission called Show Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:04:33'),
-(68,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:04:40'),
-(69,	'Created new permission called Edit Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:05:16'),
-(70,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:05:32'),
-(71,	'Created new permission called Destroy Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:05:53'),
-(72,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:05:59'),
-(73,	'Updated the permission named List and Show Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:07:46'),
-(74,	'Updated the permission named List and Show Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:08:03'),
-(75,	'Deleted permission named Show Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:08:08'),
-(76,	'Updated the permission named Delete Cars Orders.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:08:51'),
-(77,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:11:25'),
-(78,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:11:32'),
-(79,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:12:00'),
-(80,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:12:17'),
-(81,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:14:03'),
-(82,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:14:11'),
-(83,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:14:35'),
-(84,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 15:36:57'),
-(85,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 18:17:54'),
-(86,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 18:18:04'),
-(87,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 18:20:31'),
-(90,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 18:21:27'),
-(91,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 19:46:11'),
-(92,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 19:46:21'),
-(93,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:26:43'),
-(96,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:34:11'),
-(97,	'Created new permission called List and Show Jobs.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:34:58'),
-(98,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:35:04'),
-(99,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:40:21'),
-(100,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:40:27'),
-(101,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:40:30'),
-(104,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 20:51:07'),
-(105,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:01:37'),
-(108,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:07:23'),
-(109,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:56:29'),
-(114,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:57:50'),
-(115,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:58:11'),
-(116,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:58:45'),
-(117,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36',	'2021-11-11 21:58:56'),
-(121,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-17 23:26:03'),
-(122,	'Updated profile avatar.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-17 23:26:21'),
-(123,	'Updated role with name Human Resource Department.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-17 23:30:16'),
-(124,	'Updated role with name Senior Human Resource Department.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-17 23:32:19'),
-(125,	'Updated profile details for Admin Car Workshop.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-17 23:46:50'),
-(126,	'Updated profile details for Admin Car Workshop.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:41:41'),
-(127,	'Updated profile details for Chandrayana Putra.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:48:21'),
-(128,	'Updated profile details for Chandrayana Putra.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:48:28'),
-(129,	'Updated profile details for Chandrayana Putra.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:50:40'),
-(130,	'Deleted user John Wick.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:52:16'),
-(131,	'Updated profile details for John Wick.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:52:45'),
-(132,	'Deleted user Arysanendra Reyswara.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:53:23'),
-(133,	'Updated profile details for Keanu Reaves.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:54:01'),
-(134,	'Updated profile details for Keanu Reaves.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:54:15'),
-(135,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:55:50'),
-(136,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:57:06'),
-(137,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:57:35'),
-(138,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:57:44'),
-(139,	'Updated profile details.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:58:21'),
-(140,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 00:59:46'),
-(141,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 01:00:08'),
-(142,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 01:00:18'),
-(143,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 01:00:36'),
-(144,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 01:00:45'),
-(145,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 01:01:41'),
-(146,	'Updated profile details.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 01:02:08'),
-(147,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 02:00:40'),
-(148,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 02:19:58'),
-(149,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 02:20:09'),
-(150,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 04:03:22'),
-(151,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 04:04:15'),
-(152,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 04:04:31'),
-(153,	'Updated the permission named Create Candidate Detail.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:49:13'),
-(154,	'Updated the permission named Create Candidate Detail.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:49:40'),
-(155,	'Updated the permission named List and Show Candidate Detail.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:50:08'),
-(156,	'Updated the permission named Edit Candidate Detail.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:50:41'),
-(157,	'Updated the permission named Delete Candidate Detail.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:51:19'),
-(158,	'Deleted permission named List and Show Jobs.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:51:26'),
-(159,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:52:02'),
-(160,	'Updated role permissions.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 05:52:31'),
-(161,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:02:50'),
-(162,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:03:13'),
-(163,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:08:16'),
-(164,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:08:38'),
-(165,	'Updated profile details for Keanu Reaves.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:08:50'),
-(166,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:09:43'),
-(167,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:09:59'),
-(168,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:11:46'),
-(169,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:11:57'),
-(170,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:12:08'),
-(171,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:12:14'),
-(172,	'Updated website settings.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:12:48'),
-(173,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:14:12'),
-(174,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:14:18'),
-(175,	'Updated website settings.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:14:30'),
-(176,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:14:35'),
-(177,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 06:14:41'),
-(178,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 22:13:54'),
-(179,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-18 22:14:00'),
-(180,	'Logged in.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 05:20:20'),
-(181,	'Logged out.',	1,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 05:20:29'),
-(182,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 05:20:48'),
-(183,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 07:40:57'),
-(184,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 07:44:09'),
-(185,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 07:44:16'),
-(186,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 07:44:27'),
-(187,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 07:44:38'),
-(188,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 15:23:14'),
-(189,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:30:32'),
-(190,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:30:39'),
-(191,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:32:01'),
-(192,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:32:10'),
-(193,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:32:24'),
-(194,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:32:31'),
-(195,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:32:45'),
-(196,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:32:59'),
-(197,	'Updated profile avatar.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:34:30'),
-(198,	'Updated profile avatar.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 17:35:00'),
-(199,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 19:20:55'),
-(200,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:04:31'),
-(201,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:04:39'),
-(202,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:31:54'),
-(203,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:32:16'),
-(204,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:32:39'),
-(205,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:32:46'),
-(206,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:35:51'),
-(207,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:36:00'),
-(208,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:36:33'),
-(209,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:36:40'),
-(210,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:36:48'),
-(211,	'Logged in.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:36:54'),
-(212,	'Logged out.',	2,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:48:42'),
-(213,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:48:56'),
-(214,	'Logged out.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 20:49:09'),
-(215,	'Logged in.',	5,	'127.0.0.1',	'PostmanRuntime/7.29.0',	'2022-03-19 22:39:46'),
-(216,	'Logged in.',	5,	'127.0.0.1',	'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.74 Safari/537.36',	'2022-03-19 23:11:02');
 
--- 2022-03-20 07:55:50
+-- 2022-11-10 06:19:43
