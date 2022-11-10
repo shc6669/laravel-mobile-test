@@ -36,8 +36,6 @@ User Role
 - username: john.wick
 - password: password123
 
-# API Accessible
+# API Accessible and Documentation
 - To enable API. Copy variable '#EXPOSE_API=true' in .env.example to 'EXPOSE_API=true', to your .env.
-
-# API Documentation
 - [API DOC](https://documenter.getpostman.com/view/5936761/2s8YekQurf#6fd4377f-a8bc-455d-9038-b5be39d869dc)
